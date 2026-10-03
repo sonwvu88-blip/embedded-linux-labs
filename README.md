@@ -1,6 +1,6 @@
 # BÁO CÁO THỰC TẬP: XÂY DỰNG VÀ ĐÁNH GIÁ THƯ VIỆN LIÊN KẾT TĨNH VÀ LIÊN KẾT ĐỘNG TRONG NGÔN NGỮ C
 
-- **Người thực hiện:** `<Sơn Vũ>`
+- **Người thực hiện:** Sơn Vũ
 - **Mục tiêu:** Xây dựng thư viện xử lý chuỗi `strutils`; đóng gói thư viện dưới hai dạng thư viện tĩnh (static library, `.a`) và thư viện động (shared library, `.so`); kiểm thử các hàm với đầu vào thông thường, giá trị biên và đầu vào lỗi; tự động hoá quá trình biên dịch bằng Makefile; đối chiếu đặc điểm của hai hình thức liên kết. Bài tập bổ sung khảo sát cách bố trí bộ nhớ (memory layout) của một chương trình C.
 
 ---
@@ -17,17 +17,15 @@ Báo cáo trình bày quá trình thiết kế thư viện `strutils` gồm ba h
 ```
 embedded_linux_lab/
 ├── README.md               # Báo cáo kỹ thuật
-├── docs/
-│   └── images/             # Ảnh chụp màn hình kết quả thực nghiệm
+├── pics/
 ├── strutils_lab/
 │   ├── strutils.h          # Tệp tiêu đề: khai báo giao diện của thư viện
 │   ├── strutils.c          # Cài đặt các hàm của thư viện
 │   ├── main.c              # Chương trình kiểm thử
 │   ├── Makefile            # Tự động hoá quá trình xây dựng
-│   └── .gitignore          # Loại các tệp sinh ra khi biên dịch khỏi kho mã nguồn
 └── memory_layout_lab/
     ├── main.c              # Chương trình khảo sát địa chỉ các vùng nhớ
-    └── .gitignore
+
 ```
 
 Các tệp sinh ra trong quá trình xây dựng (`.o`, `.a`, `.so` và tệp hoạt động) không được đưa vào kho mã nguồn.

@@ -1,0 +1,23 @@
+# Thư viện và object file sinh ra khi build
+*.o
+*.a
+*.so
+*.so.*
+
+# Tệp thực thi
+main_static
+main_shared
+main_rpath
+main_full_static
+test_nhanh
+memlayout
+
+# Output nháp khi làm thí nghiệm
+out_*.txt
+bai*_*.txt
+
+# Tệp của trình soạn thảo / hệ điều hành
+.vscode/
+*~
+*.swp
+.DS_Store
